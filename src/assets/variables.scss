@@ -1,0 +1,11 @@
+// breakpoints(mobile first)
+@mixin tab {
+  @media screen and (min-width: 560px) {
+    @content;
+  }
+}
+@mixin pc {
+  @media screen and (min-width: 960px) {
+    @content;
+  }
+}
