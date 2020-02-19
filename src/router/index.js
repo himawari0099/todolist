@@ -1,14 +1,14 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Home from '../views/Home.vue'
+import Todo from '../views/Todo.vue'
 
 Vue.use(VueRouter)
 
 const routes = [
   {
     path: '/',
-    name: 'home',
-    component: Home
+    name: 'Todo',
+    component: Todo
   },
   {
     path: '/about',
@@ -19,10 +19,15 @@ const routes = [
     component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
   },
   {
-    path: '/todo',
-    name: 'todo',
-    component: () => import('../views/Todo.vue')
-  }
+    path:'/test',
+    name:'test',
+    component:() => import('../views/test.vue')
+  },
+  {
+    path:'/todo',
+    name:'todo',
+    component:() => import('../views/Todo.vue')
+  },
 ]
 
 const router = new VueRouter({
