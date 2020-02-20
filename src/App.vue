@@ -27,4 +27,8 @@
     }
   }
 }
+
+ .vs-icon.material-icons {
+    font-size: 16px;
+  }
 </style>
